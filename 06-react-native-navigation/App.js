@@ -20,9 +20,30 @@ export default class App extends React.Component {
         })
     }
 
+    addLieu = (voyage, lieu) => {
+        let newList = this.state.voyages.map(trip => {
+            if(trip == voyage){
+                trip.lieux.push(lieu);
+            }
+
+            return trip;
+        });
+
+        this.setState({
+            voyages: newList
+        })
+    }
+
     render() {
         return (
-            <MenuPrincipal screenProps={{listeClients : this.state.listeClients}} addVoyage={(voyage) => addVoyage(voyage)}/>
+            <MenuPrincipal
+                screenProps={{
+                    listeClients : this.state.listeClients,
+                    voyages: this.state.voyages,
+                    addVoyage: (voyage) => this.addVoyage(voyage),
+                    addLieu: (voyage, lieu) => this.addLieu(voyage, lieu)
+                }}
+            />
         );
     }
 }

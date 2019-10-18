@@ -1,20 +1,30 @@
 import React from 'react'
 import {Text, View} from 'react-native'
-import { createBottomTabNavigator } from 'react-navigation'
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation'
 
 import ListerVoyages from './ListerVoyages'
+import UnVoyage from './UnVoyage'
 import AjouterVoyage from './AjouterVoyage'
 
 
+const options = {
+    navigationOptions: {
+        headerStyle: {
+            backgroundColor: '#fff'
+        },
+        headerTintColor: '#fff'
+    }
+}
+
+const VoyagesNav = createStackNavigator({
+    ListerVoyages: { screen: ListerVoyages},
+    UnVoyage: { screen: UnVoyage }
+}, options)
+
+
 const MenuPrincipal = createBottomTabNavigator({
-    ListerVoyages: { screen: ListerVoyages },
+    ListerVoyages: { screen: VoyagesNav }, // noter ici que la route 'ListerVoyages' conduit à une nouvelle navigation.
     AjouterVoyage: { screen: AjouterVoyage }
 })
-
-// const MenuPrincipal = () => {
-//     return (<View style={{marginTop:100}}>
-//         <Text>Menu principal</Text>
-//     </View>)
-// }
 
 export default MenuPrincipal

@@ -36,17 +36,21 @@ export default class UnVoyage extends React.Component {
     }
     ajouterLieu = () => {
         if (this.state.nom === '' || this.state.description === '') return
-        const { voyage } = this.props.navigation.state.params
+        const { voyage } = this.props.navigation.state.params;
+        const screenProps = this.props.navigation.getScreenProps();
+
         const lieu = {
             nom: this.state.nom,
             description: this.state.description
         }
-        // TODO propager l'action pour ajouter un nouveau dans les données (App.js)
+        
+        screenProps.addLieu(voyage, lieu);
+        
         this.setState({ nom: '', description: '' })
     }
     render() {
-        // TODO récupérer le voyage courant depuis `props.navigation.state.params`
-        const voyage = {}
+        const { voyage } = this.props.navigation.state.params
+
         return (
             <View style={{ flex: 1 }}>
                 <ScrollView contentContainerStyle={[!voyage.lieux.length && { flex: 1 }]}>

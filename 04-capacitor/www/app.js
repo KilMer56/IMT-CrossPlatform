@@ -1,6 +1,6 @@
 const { Plugins } = capacitorExports;
 const { Storage } = Plugins;
-v
+
 let array = getData();
 
 if(array != null){

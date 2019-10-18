@@ -29,15 +29,15 @@ export default class AjouterVoyage extends React.Component {
             lieux: []
         }
 
-        // TODO propager l'événement d'ajout d'un nouveau voyage pour alimenter l'état (App.js)
-
+        const screenProps = this.props.navigation.getScreenProps();
+        screenProps.addVoyage(voyage);
 
         this.setState({
             ville: '',
             pays: ''
         })
 
-        // TODO une fois l'état mis à jour, rediriger l'utilisateur vers la liste des voyages
+        this.props.navigation.navigate('ListerVoyages');
     }
 
     render() {

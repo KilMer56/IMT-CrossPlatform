@@ -23,9 +23,15 @@ export default class ListerVoyages extends React.Component {
         }
     }
 
+    redirectToVoyage = (voyage) => {
+        console.log("redirectToVoyage")
+        console.log(voyage)
+        this.props.navigation.navigate('UnVoyage', { voyage });
+    }
+
     render() {
-        // TODO récupérer les voyages depuis l'état global de l'application (App.js)
-        const voyages = []
+        const screenProps = this.props.navigation.getScreenProps();
+        const voyages = screenProps.voyages;
 
         // TODO implémenter la navigation vers la page de détail d'un voyage
         return (
@@ -37,7 +43,7 @@ export default class ListerVoyages extends React.Component {
                     }
                     {
                         voyages.map((voyage, index) => (
-                            <TouchableWithoutFeedback key={index}>
+                            <TouchableWithoutFeedback key={index} onPress={() => this.redirectToVoyage(voyage)}>
                                 <View style={styles.conteneurVoyage}>
                                     <Text style={styles.ville}>{voyage.ville}</Text>
                                     <Text style={styles.pays}>{voyage.pays}</Text>
