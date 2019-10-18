@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/platforms/android/app/build/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/CordovaLib/build/generated/source/buildConfig/buildConfig1.iml" filepath="$PROJECT_DIR$/platforms/android/CordovaLib/build/generated/source/buildConfig/buildConfig1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/bundle-manifest.iml" filepath="$PROJECT_DIR$/platforms/android/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/bundle-manifest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/cordova-plugin-device/src/cordova-plugin-device.iml" filepath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/cordova-plugin-device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/cordova-plugin-whitelist.iml" filepath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/cordova-plugin-whitelist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/app/build/intermediates/merged_manifests/debug/debug.iml" filepath="$PROJECT_DIR$/platforms/android/app/build/intermediates/merged_manifests/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/app/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/instant-app-manifest.iml" filepath="$PROJECT_DIR$/platforms/android/app/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/instant-app-manifest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/app/src/main/main.iml" filepath="$PROJECT_DIR$/platforms/android/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/processDebugResources.iml" filepath="$PROJECT_DIR$/platforms/android/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/processDebugResources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/cordova-plugin-whitelist/tests/src/tests.iml" filepath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/tests/src/tests.iml" />
+    </modules>
+  </component>
+</project>
